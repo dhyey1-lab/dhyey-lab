@@ -1,0 +1,16 @@
+int main() {
+    int n;
+    cout << "Enter the number of terms in Fibonacci series: ";
+    cin >> n;
+    if (n < 0) {
+        cout << "Number of terms must be non-negative." << endl;
+        return 1;
+    }
+
+    cout << "Fibonacci series up to " << n << " terms: ";
+    for (int i = 0; i < n; i++) {
+        cout << fibonacci(i) << " ";
+    }
+    cout << endl;
+    return 0;
+} 
